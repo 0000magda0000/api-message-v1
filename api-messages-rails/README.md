@@ -44,7 +44,7 @@ The output is UUIDs of all messages in JSON.
 add a specific UUID to the following: `<BASE_URL>/messages/UUID`<br>
 and use a `GET` request.<br>
 The output is content, counter and UUID of the specific message.<br>
-Anytime this endpoint is loaded, the counter will increment by 1.
+Anytime this specific message is loaded, the counter will increment by 1.
 ### 3. Update a specific message by UUID
 add a specific UUID to following: `<BASE_URL>/messages/UUID`<br>
 and use a `PATCH` request
