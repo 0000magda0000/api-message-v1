@@ -31,13 +31,16 @@ You can also use a browser “Rest Client” (Like Postman) or [ruby code](https
 
 ### 1. Get UUIDs of all messages
 add the following to the base url: `<BASE_URL>/api/v1/messages`<br>
-and use a `GET` request
+and use a `GET` request.<br>
+The output is UUIDs of all messages in JSON.
 ### 2. Get one message by UUID
 add a specific UUID to the following: `<BASE_URL>/api/v1/messages/UUID`<br>
-and use a `GET` request
+and use a `GET` request.<br>
+The output is content, counter and UUID of the specific message.<br>
+Anytime this endpoint is loaded, the counter will increment by 1.
 ### 3. Update a specific message by UUID
 add a specific UUID to following: `<BASE_URL>/api/v1/messages/UUID`<br>
-and use a `POST` request
+and use a `PATCH` request
 in JSON format type the key `"content"` and the new text `"this is a great update"` into the body<br>
 Example:<br>
 `{ "content": "this is a great update" }`
