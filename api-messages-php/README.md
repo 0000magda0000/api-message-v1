@@ -28,27 +28,27 @@ The API responds to different types of requests, which will be explained below.
 Use a “Rest Client” like Postman.
 
 ### 1. Get UUIDs of all messages
-add the following URL path: `http://localhost/api/message/read.php`. 
+add the following URL path: `http://localhost/api/message/read.php`\ 
 ### 2. Get one message by UUID
-add the following URL path and a specific UUID: `http://localhost/api/message/read_one.php?uuid=UUID`. 
+add the following URL path and a specific UUID: `http://localhost/api/message/read_one.php?uuid=UUID`\
 ### 3. Update a specific message by UUID
-add the following URL path: `http://localhost/api/message/update.php`. 
-Set the body to `raw` and choose `JSON`. 
-In JSON format type the keys `"content"` and `"uuid"` with the new text `"this is a great update"` and the UUID as string into the body
-Example:
+add the following URL path: `http://localhost/api/message/update.php`\ 
+Set the body to `raw` and choose `JSON`\
+In JSON format type the keys `"content"` and `"uuid"` with the new text `"this is a great update"` and the UUID as string into the body.\
+Example:\
 `{ "content": "this is a great update",
    "uuid": "73dc381a-6ba5-11eb-889f-294d09474895"
  }`
 ### 4. Create a new message
-add the following URL path: `http://localhost/api/message/create.php` 
-in JSON format type the key `"content"` and the some text `"this is a new message"` into the body.
-Example:
+add the following URL path: `http://localhost/api/message/create.php`\
+in JSON format type the key `"content"` and the some text `"this is a new message"` into the body.\
+Example:\
 `{ "content": "this is a new message" }`
 ### 5. Delete a message by UUID
-add the following URL path: `http://localhost/api/message/delete.php` 
-Set the body to `raw` and choose `JSON`.
-In JSON format type `"uuid" UUID as string into the body`
-Example:
+add the following URL path: `http://localhost/api/message/delete.php`\ 
+Set the body to `raw` and choose `JSON`.\
+In JSON format type `"uuid" UUID as string into the body`\
+Example:'
 `{
    "uuid": "73dc381a-6ba5-11eb-889f-294d09474895"
  }`
