@@ -14,11 +14,12 @@ retrieved (unsigned number)
 * built on macOS Catalina Version 10.15.3
 
 ## What is in this repository?
-This repository holds two version of an API with the same behaviour as described in About api-messages. One version is writtein in Rails (api-messages-rails) and one version is built in php (api-messages-php).
+This repository holds two version of an API with the same behaviour as described in About api-messages. One version is written in Rails (api-messages-rails) and one version is built with php (api-messages-php).
 
 ## Using api-messages-rails and api-messages-php
 Start with cloning this repository:
 
-$ git clone https://github.com/0000magda0000/api-messages-v1.git
+$ git clone https://github.com/0000magda0000/api-message-v1.git
 
-open the api version that you would like to see. Each version has it's own README.md with further instructions.
+Open the api version that you would like to see. 
+Each version has it's own README.md with further instructions.
