@@ -34,7 +34,7 @@ add the following URL path and a specific UUID: `http://localhost/api/message/re
 ### 3. Update a specific message by UUID
 add the following URL path: `http://localhost/api/message/update.php` 
 Set the body to `raw` and choose `JSON`.
-In JSON format type the keys `"content"` and `"uuid" with the new text `"this is a great update"` and the UUID as string into the body
+In JSON format type the keys `"content"` and `"uuid"` with the new text `"this is a great update"` and the UUID as string into the body
 Example:
 `{ "content": "this is a great update",
    "uuid": "73dc381a-6ba5-11eb-889f-294d09474895"
@@ -47,7 +47,7 @@ Example:
 ### 5. Delete a message by UUID
 add the following URL path: `http://localhost/api/message/delete.php` 
 Set the body to `raw` and choose `JSON`.
-In JSON format type `"uuid" UUID as string into the body
+In JSON format type `"uuid" UUID as string into the body`
 Example:
 `{
    "uuid": "73dc381a-6ba5-11eb-889f-294d09474895"
