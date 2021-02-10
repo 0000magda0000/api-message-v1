@@ -17,30 +17,40 @@ retrieved (unsigned number)
 ## Database creation
 * mysql
 
+## Prerequsites
+In order to use the API run it on your local machine. Run the apache server with the command `sudo apachectl start` and run the mysql server for example by running the command `mysql.server start` (depending on how mysql was installed, this may vary from machine to machine).
+
+Move the project folder api-messages-php into your Sites folder (~/Sites). If you don't have a Sites folder create one and change your server settings accordingly.
+
 ## Using api-messages
-In order to use the API, you run it on your local machine. Run the apache server with the command `` by the command `rails server` in terminal, Base URL is `localhost:3000`.
 The API responds to different types of requests, which will be explained below.
-You can also use a browser “Rest Client” (Like Postman) or [ruby code](https://stackoverflow.com/questions/12161640/setting-request-headers-in-ruby/12161762#12161762).
+Use a “Rest Client” like Postman.
 
 ### 1. Get UUIDs of all messages
-add the following to the base url: `<BASE_URL>/api/v1/messages` 
-and use a `GET` request
+add the following URL path: `http://localhost/api/message/read.php` 
 ### 2. Get one message by UUID
-add a specific UUID to the following: `<BASE_URL>/api/v1/messages/UUID` 
-and use a `GET` request
+add the following URL path and a specific UUID: `http://localhost/api/message/read_one.php?uuid=UUID` 
 ### 3. Update a specific message by UUID
-add a specific UUID to following: `<BASE_URL>/api/v1/messages/UUID` 
-and use a `POST` request
-in JSON format type the key `"content"` and the new text `"this is a great update"` into the body
-`{ "content": "this is a great update" }`
+add the following URL path: `http://localhost/api/message/update.php` 
+Set the body to `raw` and choose `JSON`.
+In JSON format type the keys `"content"` and `"uuid" with the new text `"this is a great update"` and the UUID as string into the body
+Example:
+`{ "content": "this is a great update",
+   "uuid": "73dc381a-6ba5-11eb-889f-294d09474895"
+ }`
 ### 4. Create a new message
-add the following to the base url: `<BASE_URL>/api/v1/messages` 
-and use a `POST` request
-in JSON format type the key `"content"` and the some text `"this is a new message"` into the body
+add the following URL path: `http://localhost/api/message/create.php` 
+in JSON format type the key `"content"` and the some text `"this is a new message"` into the body.
+Example:
 `{ "content": "this is a new message" }`
 ### 5. Delete a message by UUID
-add a specific UUID to the following: `<BASE_URL>/api/v1/messages/UUID` 
-and use a `DELETE` request
+add the following URL path: `http://localhost/api/message/delete.php` 
+Set the body to `raw` and choose `JSON`.
+In JSON format type `"uuid" UUID as string into the body
+Example:
+`{
+   "uuid": "73dc381a-6ba5-11eb-889f-294d09474895"
+ }`
 
 ## License
 GNU General Public License
