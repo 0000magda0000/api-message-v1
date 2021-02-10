@@ -12,22 +12,13 @@ retrieved (unsigned number)
 
 ## System dependencies
 * built on macOS Catalina Version 10.15.3
-* built with Rails 6.0.3.4
-* Ruby 2.6.6p146
-* gem 'mysql-binuuid-rails'
-* gem 'uuidtools'
+* PHP 7.3.11
 
 ## Database creation
-* mysql2
+* mysql
 
 ## Using api-messages
-Start with cloning this repository and change to the project directory:
-
-$ git clone https://github.com/0000magda0000/api-messages.git \
-$ cd api-messages
-
-## Using api-messages
-In order to use the API, you can run it on your local machine. Run the server by the command `rails server` in terminal, Base URL is `localhost:3000`.
+In order to use the API, you run it on your local machine. Run the apache server with the command `` by the command `rails server` in terminal, Base URL is `localhost:3000`.
 The API responds to different types of requests, which will be explained below.
 You can also use a browser “Rest Client” (Like Postman) or [ruby code](https://stackoverflow.com/questions/12161640/setting-request-headers-in-ruby/12161762#12161762).
 
