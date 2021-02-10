@@ -45,7 +45,7 @@ Example:<br>
 add the following to the base url: `<BASE_URL>/api/v1/messages`<br>
 and use a `POST` request<br>
 in JSON format type the key `"content"` and the some text `"this is a new message"` into the body<br>
-Example:
+Example:<br>
 `{ "content": "this is a new message" }`
 ### 5. Delete a message by UUID
 add a specific UUID to the following: `<BASE_URL>/api/v1/messages/UUID`<br>
