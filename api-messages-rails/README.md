@@ -30,35 +30,35 @@ $ cd api-messages
 In order to use the API, you can run it on your local machine. Run the server by the command `rails server` in terminal, Base URL is `localhost:3000`.
 
 ### Deployed version
-The Base URL is https://api-messages-rails.herokuapp.com/api/v1/messages
+The Base URL is https://api-messages-rails.herokuapp.com/api/v1
 
 ## Making requests
 The API responds to different types of requests, which will be explained below.
 You can also use a browser “Rest Client” (Like Postman) or [ruby code](https://stackoverflow.com/questions/12161640/setting-request-headers-in-ruby/12161762#12161762).
 
 ### 1. Get UUIDs of all messages
-add the following to the base url: `<BASE_URL>`<br>
+add the following to the base url: `<BASE_URL>/messages`<br>
 and use a `GET` request.<br>
 The output is UUIDs of all messages in JSON.
 ### 2. Get one message by UUID
-add a specific UUID to the following: `<BASE_URL>/UUID`<br>
+add a specific UUID to the following: `<BASE_URL>/messages/UUID`<br>
 and use a `GET` request.<br>
 The output is content, counter and UUID of the specific message.<br>
 Anytime this endpoint is loaded, the counter will increment by 1.
 ### 3. Update a specific message by UUID
-add a specific UUID to following: `<BASE_URL>/UUID`<br>
+add a specific UUID to following: `<BASE_URL>/messages/UUID`<br>
 and use a `PATCH` request
 in JSON format type the key `"content"` and the new text `"this is a great update"` into the body<br>
 Example:<br>
 `{ "content": "this is a great update" }`
 ### 4. Create a new message
-add the following to the base url: `<BASE_URL>`<br>
+add the following to the base url: `<BASE_URL>/messages`<br>
 and use a `POST` request<br>
 in JSON format type the key `"content"` and the some text `"this is a new message"` into the body<br>
 Example:<br>
 `{ "content": "this is a new message" }`
 ### 5. Delete a message by UUID
-add a specific UUID to the following: `<BASE_URL>/UUID`<br>
+add a specific UUID to the following: `<BASE_URL>/messages/UUID`<br>
 and use a `DELETE` request
 
 ## License
