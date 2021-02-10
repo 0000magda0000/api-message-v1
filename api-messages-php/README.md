@@ -13,6 +13,7 @@ retrieved (unsigned number)
 ## System dependencies
 * built on macOS Catalina Version 10.15.3
 * PHP 7.3.11
+* mysql Ver 8.0.23 for osx10.15 on x86_64 (Homebrew)
 
 ## Database creation
 * mysql
