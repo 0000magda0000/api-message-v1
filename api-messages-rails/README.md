@@ -1,6 +1,6 @@
 # 👩‍💻 REST API for maintaining messages
 
-## About api-messages
+## About api-messages-rails
 The following statements are true about a message:
 * it has a non-guessable identifier (UUID v4),
 * it can contain characters coming from different languages,
