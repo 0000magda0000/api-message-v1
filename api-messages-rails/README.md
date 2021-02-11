@@ -27,7 +27,7 @@ Start with cloning this repository and change to the project directory:
 $ git clone https://github.com/0000magda0000/api-messages.git \
 $ cd api-messages
 
-In order to use the API, you can run it on your local machine. Run the server by the command `rails server` in terminal, Base URL is `localhost:3000`.
+In order to use the API, you can run it on your local machine. Run the server by the command `rails server` in terminal, Base URL is `localhost:3000/api/v1`.
 
 ### Deployed version
 The Base URL is https://api-messages-rails.herokuapp.com/api/v1
