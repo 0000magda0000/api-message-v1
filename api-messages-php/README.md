@@ -37,7 +37,7 @@ and create a table with the following SQL statement:
 
 ```
 CREATE TABLE messages (
-  uuid INT(128) NOT 0,
+  uuid BINARY(16) NOT NULL,
   content VARCHAR(255) NOT NULL,
   counter INT UNSIGNED DEFAULT 0,
   PRIMARY KEY ( uuid )
@@ -48,6 +48,8 @@ CREATE TRIGGER init_uuid BEFORE INSERT ON messages
   FOR EACH ROW SET NEW.uuid = UUID();
 //
 DELIMITER ;
+
+SELECT BIN_TO_UUID(uuid) AS UUID FROM messages;  
 ```
 For the following instructions when using localhost use the base URL http://localhost/api/message
 
