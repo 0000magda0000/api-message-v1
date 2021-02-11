@@ -24,10 +24,12 @@ You can test the API either via localhost or the deployed version
 ### Localhost
 Start with cloning this repository and change to the project directory:
 
-$ git clone https://github.com/0000magda0000/api-messages.git \
-$ cd api-messages
+$ git clone https://github.com/0000magda0000/api-messages-v1.git \
+in terminal navigate to the api-messagiges-rails folder
 
-In order to use the API, you can run it on your local machine. Run the server by the command `rails server` in terminal, Base URL is `localhost:3000/api/v1`.
+You will probalby have to run the commands `rails bundel` for the gems and `rails db:create db:migrate` to create the db and migrate the migrations file. Once done, run the server by the command `rails server` in terminal.<br>
+Base URL for the requests is `localhost:3000/api/v1`.
+
 
 ### Deployed version
 The Base URL is https://api-messages-rails.herokuapp.com/api/v1
