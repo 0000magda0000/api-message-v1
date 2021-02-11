@@ -25,7 +25,15 @@ Your can test the API either on your localhost or on the deployed version with t
 In order to use the API locally, run the apache server with the command `sudo apachectl start` and run the mysql server for example by running the command `mysql.server start` (depending on how mysql was installed, this may vary from machine to machine).
 Move the project folder api-messages-php into your Sites folder (~/Sites). If you don't have a Sites folder create one and change your server settings accordingly.
 
-Create a database with the following SQL statement:
+Create a database with the credentials: 
+
+```
+    private $host = "localhost";
+    private $db_name = "apimessages";
+    private $username = "root";
+    private $password = "123456";
+```
+and create a table with the following SQL statement:
 
 ```
 CREATE TABLE messages (
