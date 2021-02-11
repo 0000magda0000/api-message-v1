@@ -27,7 +27,7 @@ Start with cloning this repository and change to the project directory:
 $ git clone https://github.com/0000magda0000/api-messages-v1.git \
 in terminal navigate to the api-messagiges-rails folder
 
-You will probalby have to run the commands `rails bundel` for the gems and `rails db:create db:migrate` to create the db and migrate the migrations file. Once done, run the server by the command `rails server` in terminal.<br>
+You will probalby have to run the commands `bundle install` for the gems and `rails db:create db:migrate` to create the db and migrate the migrations file. Once done, run the server by the command `rails server` in terminal.<br>
 Base URL for the requests is `localhost:3000/api/v1`.
 
 
