@@ -43,12 +43,6 @@ CREATE TABLE messages (
   PRIMARY KEY ( uuid )
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4;
 
-DELIMITER //
-CREATE TRIGGER init_uuid BEFORE INSERT ON messages
-  FOR EACH ROW SET NEW.uuid = UUID();
-//
-DELIMITER ;
-
 SELECT BIN_TO_UUID(uuid) AS UUID FROM messages;  
 ```
 For the following instructions when using localhost use the base URL http://localhost/api/message
