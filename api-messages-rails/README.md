@@ -1,4 +1,4 @@
-# 👩‍💻 REST API for maintaining messages
+# 👩‍💻 REST API RAILS for maintaining messages
 
 ## About api-messages-rails
 The following statements are true about a message:
