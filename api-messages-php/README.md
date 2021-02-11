@@ -1,4 +1,4 @@
-# 👩‍💻 REST API for maintaining messages
+# 👩‍💻 REST API PHP for maintaining messages
 
 ## About api-messages-php
 The following statements are true about a message:
@@ -18,22 +18,27 @@ retrieved (unsigned number)
 ## Database
 * mysql
 
-## localhost or deployed version
-Your can test the API either on your localhost or on the deployed version with the base URL https://api-messages-php.herokuapp.com/api/message
+## Using api-messages
+You can test the API either via localhost or the deployed version
 
-### Prerequsites localhost
+### Localhost
+Start with cloning this repository and change to the project directory:
+
+$ git clone https://github.com/0000magda0000/api-messages-v1.git \
+in terminal navigate to the api-messagiges-php folder
+
 In order to use the API locally, run the apache server with the command `sudo apachectl start` and run the mysql server for example by running the command `mysql.server start` (depending on how mysql was installed, this may vary from machine to machine).
 Move the project folder api-messages-php into your Sites folder (~/Sites). If you don't have a Sites folder create one and change your server settings accordingly.
 
 Create a database with the credentials: 
 
 ```
-    private $host = "localhost";
-    private $db_name = "apimessages";
-    private $username = "root";
-    private $password = "12345678";
+    host: localhost
+    db_name: apimessages
+    username: root
+    passwordL 12345678
 ```
-and create a table with the following SQL statement:
+and create a table in your DB with the following SQL statement:
 
 ```
 CREATE TABLE messages (
@@ -52,6 +57,10 @@ DELIMITER ;
 SELECT BIN_TO_UUID(uuid) AS UUID FROM messages;  
 ```
 For the following instructions when using localhost use the base URL http://localhost/api/message
+
+
+### Deployed version
+The Base URL is https://api-messages-php.herokuapp.com/api/message
 
 ## Using api-messages
 The API responds to different types of requests, which will be explained below.
