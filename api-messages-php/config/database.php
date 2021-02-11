@@ -5,7 +5,7 @@ class Database{
     private $host = "localhost";
     private $db_name = "apimessages";
     private $username = "root";
-    private $password = "123456";
+    private $password = "12345678";
     public $conn;
 
     // get the database connection
