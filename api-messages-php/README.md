@@ -25,7 +25,7 @@ You can test the API either via localhost or the deployed version
 Start with cloning this repository and change to the project directory:
 
 $ git clone https://github.com/0000magda0000/api-messages-v1.git \
-in terminal navigate to the api-messagiges-php folder
+in terminal navigate to the api-messages-php folder
 
 In order to use the API locally, run the apache server with the command `sudo apachectl start` and run the mysql server for example by running the command `mysql.server start` (depending on how mysql was installed, this may vary from machine to machine).
 Move the project folder api-messages-php into your Sites folder (~/Sites). If you don't have a Sites folder create one and change your server settings accordingly.
