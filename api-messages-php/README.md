@@ -39,7 +39,7 @@ and create a table with the following SQL statement:
 CREATE TABLE messages (
   uuid INT(128) NOT 0,
   content VARCHAR(255) NOT NULL,
-  counter INT UNSIGNED DEFAULT 0 DEFAULT NULL,
+  counter INT UNSIGNED DEFAULT 0,
   PRIMARY KEY ( uuid )
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4;
 
