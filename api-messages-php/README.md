@@ -31,7 +31,7 @@ Create a database with the credentials:
     private $host = "localhost";
     private $db_name = "apimessages";
     private $username = "root";
-    private $password = "123456";
+    private $password = "12345678";
 ```
 and create a table with the following SQL statement:
 
