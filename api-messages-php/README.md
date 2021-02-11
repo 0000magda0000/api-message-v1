@@ -29,9 +29,9 @@ Create a database with the following SQL statement:
 
 ```
 CREATE TABLE messages (
-  uuid INT(128) NOT NULL,
+  uuid INT(128) NOT 0,
   content VARCHAR(255) NOT NULL,
-  counter INT UNSIGNED DEFAULT NULL,
+  counter INT UNSIGNED DEFAULT 0 DEFAULT NULL,
   PRIMARY KEY ( uuid )
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4;
 
