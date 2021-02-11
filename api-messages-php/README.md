@@ -75,7 +75,7 @@ Set the body to `raw` and choose `JSON`\
 In JSON format type the keys `"content"` and `"uuid"` with the new text `"this is a great update"` and the UUID as string into the body.<br>
 Example:<br>
 `{ "content": "this is a great update",
-   "uuid": "73"
+   "uuid": "82bdfc48-6c93-11"
  }`
 ### 4. Create a new message
 add the following URL path: `<BASE_URL>/create.php`<br>
@@ -85,10 +85,10 @@ Example:<br>
 ### 5. Delete a message by UUID
 add the following URL path: `<BASE_URL>/delete.php`<br> 
 Set the body to `raw` and choose `JSON`.<br>
-In JSON format type `"uuid" UUID as string into the body`<br>
+In JSON format type `"uuid"` UUID as string into the body<br>
 Example:<br>
 `{
-   "uuid": "73"
+   "uuid": "82bdfc48-6c93-11"
  }`
 
 ## License
