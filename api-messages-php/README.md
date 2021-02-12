@@ -43,7 +43,7 @@ Next in mysql type `use apimessages;` and after that create a table in your DB w
 
 ```
 CREATE TABLE messages (
-  uuid BINARY(16) NOT NULL,
+  uuid VARBINARY(36) NOT NULL,
   content VARCHAR(255) NOT NULL,
   counter INT UNSIGNED DEFAULT 0,
   PRIMARY KEY ( uuid )
