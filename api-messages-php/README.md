@@ -44,7 +44,7 @@ Next in mysql type `use apimessages;` and after that create a table in your DB w
 ```
 CREATE TABLE messages (
   uuid VARBINARY(36) NOT NULL,
-  content VARCHAR(255) NOT NULL,
+  content CHAR NOT NULL,
   counter INT UNSIGNED DEFAULT 0,
   PRIMARY KEY ( uuid )
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4;
