@@ -30,15 +30,16 @@ in terminal navigate to the api-messages-php folder
 In order to use the API locally, run the apache server with the command `sudo apachectl start` and run the mysql server for example by running the command `mysql.server start` (depending on how mysql was installed, this may vary from machine to machine).
 Move the project folder api-messages-php into your Sites folder (~/Sites). If you don't have a Sites folder create one and change your server settings accordingly.
 
-Create a database with the credentials: 
+Create a database e.g. with mysql in the command line by typing `create database apimessages;`. <br>
+Database credentials: 
 
 ```
     host: localhost
     db_name: apimessages
     username: root
-    passwordL 12345678
+    password: 12345678
 ```
-and create a table in your DB with the following SQL statement:
+Next in mysql type `use apimessages;` and after that create a table in your DB with the following SQL statement:
 
 ```
 CREATE TABLE messages (
